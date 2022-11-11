@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro _ Rutero Técnico</title>
+    <link href="css\Rutero.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="Content-router">
+        <div class="Content-inf">
+            <div class="logos"><img src="assets/logo/logo_doria.png"><img src="assets/logo/logo pastas 4.0.png" style="width: 110px;"></div>
+            <h1>
+                <span id="Title"></span> <img src="assets/icon/rutero.png" style="width: 30px;">
+            </h1>
+            
+            <h4>
+                Escribe tus novedades respecto al lugar donde te encuentras. 
+            </h4>
+            <h3>
+               <i>Ten en cuenta:</i> <br><span id="Requirements">
+            </h3>
+            
+        </div>
+        <div class="hr"><hr></div>
+        <form class="Content-form" id="form-router">
+            <h1 class="Title-form">
+                Registro de Condiciones
+            </h1>
+            <h2>
+                Nombre
+            </h2>
+            <div class="Content-select-names">
+                <select class="Select-names" name="name" >
+                    <option value="Jonathan Cortes">Jonathan Cortes</option>
+                    <option value="Juan Feliciano">Juan Feliciano</option>
+                    <option value="Julian Triana">Julian Triana</option>
+                    <option value="Sebastian Rojas">Sebastian Rojas</option>
+                    <option value="Wilman Fonseca">Wilman Fonseca</option>
+                </select>
+            </div>
+            <h2>
+                Observaciones
+            </h2>  
+            <input type="hidden" name="area" id="area">
+            <div class="message-bad" style="display: none;" id="message-bad">
+                <h3>Surgió un error</h3>
+                <img src="assets/icon/x.png">
+            </div>
+            <textarea name="observations" id="observations"></textarea>
+            <div class="message-bad" style="display: none;" id="message-required">
+                <h3>Campos sin llenar</h3>
+                <img src="assets/icon/x.png">
+            </div>
+            <br><br><input type="button" class="button-send" value="Enviar" onclick="sendRequest(this.form)" /><br><br>
+        </form>
+        <div class="message-good" style="display: none;" id="message-good">
+            <h1>Tus respuestas han sido enviadas con exito</h1>
+            <img src="assets/icon/check.gif">
+        </div>
+    </div>
+    <script src="js\Rutero.js"></script>
+</body>
+</html>
