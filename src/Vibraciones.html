@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Medición de Vibraciones</title>
+    <link rel="shortcut icon" href="./assets/logo/logo_vibraciones_low.png">
+    <link href="css\Vibraciones.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="Content-vibrations">
+        <div class="Content-inf">
+            <div class="logos"><img src="assets/logo/logo_doria.png"><img src="assets/icon/Vibration-SKF.png" style="width: 110px;"></div>
+            <h1>
+                <span id="Title"></span>
+            </h1>
+            <h1 class="Title-form">
+                Registro Medición de Vibraciones
+            </h1>
+            <h4>
+                Escribe las vibraciones que obtengas de los siguientes reportes. 
+            </h4>
+            <h3>
+               <br><span id="Requirements">
+            </h3>
+            
+        </div>
+        <div class="hr"><hr></div>
+        <form class="Content-form" id="form-vibrations">
+            <div class="inf-NameMachine">
+                <h2>
+                    Nombre
+                </h2>
+                <div class="Content-select">
+                    <input name="name" style="margin: 30px;">
+                </div>
+            </div> 
+            <h2>
+                Reporte
+            </h2>  
+            <table class="insert-table" style="border: 0px">
+                <tr>
+                    <th><div class="Content-select">
+                        <select class="Select" name="machine">
+                            <option value="Banco de molienda 42R1A">Banco de molienda 42R1A</option>
+                            <option value="Banco de molienda 42R1B">Banco de molienda 42R1B</option>
+                            <option value="Banco de molienda 42R1C">Banco de molienda 42R1C</option>
+                            <option value="Banco de molienda 42R2G">Banco de molienda 42R2G</option>
+                            <option value="Banco de molienda 42R2G-1">Banco de molienda 42R2G-1</option>
+                            <option value="Banco de molienda 42R3F">Banco de molienda 42R3F</option>
+                            <option value="Banco de molienda 42R4">Banco de molienda 42R4</option>
+                            <option value="Banco de molienda 42R5">Banco de molienda 42R5</option>
+                            <option value="Banco de molienda 42RC2">Banco de molienda 42RC2</option>
+                            <option value="Banco de molienda 42RC2-1">Banco de molienda 42RC2-1</option>
+                            <option value="Banco de molienda 42RC3">Banco de molienda 42RC3</option>
+                            <option value="Banco de molienda 42RC7">Banco de molienda 42RC7</option>
+                            <option value="Banco de molienda 42T12-1">Banco de molienda 42T12-1</option>
+                            <option value="Banco de molienda 42T12-2">Banco de molienda 42T12-2</option>
+                            <option value="Banco de molienda 42T12-3">Banco de molienda 42T12-3</option>
+                            <option value="Banco de molienda 42T12-4">Banco de molienda 42T12-4</option>
+                            <option value="Banco de molienda 42T12-5">Banco de molienda 42T12-5</option>
+                            <option value="Banco de molienda 42T12-6">Banco de molienda 42T12-6</option>
+                            <option value="Banco de molienda 42T12-7">Banco de molienda 42T12-7</option>
+                            <option value="Banco de molienda 42T12-8">Banco de molienda 42T12-8</option>
+                            <option value="Banco de molienda 42T3F">Banco de molienda 42T3F</option>
+                            <option value="Banco de molienda 42T3G">Banco de molienda 42T3G</option>
+                            <option value="Banco de molienda 42T3G-1">Banco de molienda 42T3G-1</option>
+                            <option value="Banco de molienda 42T4G">Banco de molienda 42T4G</option>
+                            <option value="Banco de molienda 42T3G">Banco de molienda 42T4G-1</option>
+                            <option value="Banco de molienda42T4F">Banco de molienda42T4F</option>
+                            <option value="SOPLADOR 11CP6">SOPLADOR 11CP6</option>
+                            <option value="SOPLADOR 11CPFA">SOPLADOR 11CPFA</option>
+                            <option value="SOPLADOR 11CPFB">SOPLADOR 11CPFB</option>
+                            <option value="SOPLADOR 41CP1 ENVIO SEMOLA A SILOS">SOPLADOR 41CP1 ENVIO SEMOLA A SILOS</option>
+                            <option value="SOPLADOR 41CP2">SOPLADOR 41CP2</option>
+                            <option value="SOPLADOR 41CP3">SOPLADOR 41CP3</option>
+                            <option value="SOPLADOR 41CP4">SOPLADOR 41CP4</option>
+                            <option value="SOPLADOR 41CP5">SOPLADOR 41CP5</option>
+                            <option value="SOPLADOR 51CP1 ENVIO SEMOLA A SILOS">SOPLADOR 51CP1 ENVIO SEMOLA A SILOS</option>
+                            <option value="SOPLADOR 51CP2 ENVIO SEMOLA PASTIFICIO">SOPLADOR 51CP2 ENVIO SEMOLA PASTIFICIO</option>
+                            <option value="SOPLADOR 51CP3">SOPLADOR 51CP3</option>
+                            <option value="TURBINA 13A4">TURBINA 13A4</option>
+                            <option value="TURBINA 16A1 PARA FILTRO ASP LIMPIA">TURBINA 16A1 PARA FILTRO ASP LIMPIA</option>
+                            <option value="TURBINA 16A2 FILTRO BUHLER">TURBINA 16A2 FILTRO BUHLER</option>
+                            <option value="TURBINA 16A6">TURBINA 16A6</option>
+                            <option value="TURBINA 17A5">TURBINA 17A5</option>
+                            <option value="TURBINA 46A3 PARA FILTRO ASP SASORES">TURBINA 46A3 PARA FILTRO ASP SASORES</option>
+                            <option value="TURBINA 46AP1">TURBINA 46AP1</option>
+                            <option value="TURBINA 46AP2">TURBINA 46AP2</option>
+                        </select>
+                    </div></th>
+                    <th class="th-TableForm" colspan="4">Lado Libre</th>
+                    <th class="th-TableForm" colspan="4">Lado Carga</th>
+                </tr>
+                
+                <tr>
+                    <td class="td-TableForm">COMPONENTE</td>
+                    <td style="border: 0px;"></td>
+                    <td class="td-TableForm">MV</td>
+                    <td class="td-TableForm">GE</td>
+                    <td class="td-TableForm">TEMP</td>
+                    <td style="border: 0px;"></td>
+                    <td class="td-TableForm">MV</td>
+                    <td class="td-TableForm">GE</td>
+                    <td class="td-TableForm">TEMP</td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm" rowspan="3" style="background-color: #222225;">LL</td>
+                    <td class="td-TableForm">CV</td>
+                    <td><input type="number" class="input-TableForm" name="llmvllcv"></td>
+                    <td><input type="number" class="input-TableForm" name="llgellcv"></td>                    
+                    <td><input type="number" class="input-TableForm" name="lltempllcv"></td>
+                    <td class="td-TableForm">CV</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvllcv"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgellcv"></td>                    
+                    <td><input type="number" class="input-TableForm" name="lctempllcv"></td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm">CH</td>
+                    <td><input type="number" class="input-TableForm" name="llmvllch"></td>
+                    <td><input type="number" class="input-TableForm" name="llgellch"></td>
+                    <td><input type="number" class="input-TableForm" name="lltempllch"></td>
+                    <td class="td-TableForm">CH</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvllch"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgellch"></td>
+                    <td><input type="number" class="input-TableForm" name="lctempllch"></td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm">CA</td>
+                    <td><input type="number" class="input-TableForm" name="llmvllca"></td>
+                    <td><input type="number" class="input-TableForm" name="llgellca"></td>
+                    <td><input type="number" class="input-TableForm" name="lltempllca"></td>
+                    <td class="td-TableForm">CA</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvllca"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgellca"></td>
+                    <td><input type="number" class="input-TableForm" name="lctempllca"></td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm" rowspan="3" style="background-color: #222225;">LC</td>
+                    <td class="td-TableForm">CV</td>
+                    <td><input type="number" class="input-TableForm" name="llmvlccv"></td>
+                    <td><input type="number" class="input-TableForm" name="llgelccv"></td>
+                    <td><input type="number" class="input-TableForm" name="lltemplccv"></td>
+                    <td class="td-TableForm">CV</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvlccv"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgelccv"></td>
+                    <td><input type="number" class="input-TableForm" name="lctemplccv"></td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm">CH</td>
+                    <td><input type="number" class="input-TableForm" name="llmvlcch"></td>
+                    <td><input type="number" class="input-TableForm" name="llgelcch"></td>
+                    <td><input type="number" class="input-TableForm" name="lltemplcch"></td>
+                    <td class="td-TableForm">CH</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvlcch"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgelcch"></td>
+                    <td><input type="number" class="input-TableForm" name="lctemplcch"></td>
+                </tr>
+                <tr>
+                    <td class="td-TableForm">CA</td>
+                    <td><input type="number" class="input-TableForm" name="llmvlcca"></td>
+                    <td><input type="number" class="input-TableForm" name="llgelcca"></td>
+                    <td><input type="number" class="input-TableForm" name="lltemplcca"></td>
+                    <td class="td-TableForm">CA</td>
+                    <td><input type="number" class="input-TableForm" name="lcmvlcca"></td>
+                    <td><input type="number" class="input-TableForm" name="lcgelcca"></td>
+                    <td><input type="number" class="input-TableForm" name="lctemplcca"></td>
+                </tr>
+            </table>
+            <div class="message-bad" style="display: none;" id="message-bad">
+                <h3>Surgió un error</h3>
+                <img src="assets/icon/x.png">
+            </div>
+            <span id="records"></span>
+            <div class="message-bad" style="display: none;" id="message-required">
+                <h3>Campos sin llenar</h3>
+                <img src="assets/icon/x.png">
+            </div>
+            <br><br><input type="button" class="button-send" value="Enviar" onclick="sendRequest(this.form)" /><br><br>
+        </form>
+        <div class="message-good" style="display: none;" id="message-good">
+            <h1>Tus respuestas han sido enviadas con exito</h1>
+            <img src="assets/icon/check.gif">
+        </div>
+    </div>
+    <script src="js\Vibraciones.js"></script>
+</body>
+</html>
