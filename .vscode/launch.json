@@ -10,8 +10,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open RespuestasRutero.html",
-            "file": "c:\\Users\\INFORMATICA\\Documents\\Desarrollos Web\\Rutero\\Rutero\\src\\RespuestasRutero.html"
+            "name": "Open RespuestasVibraciones.html",
+            "file": "c:\\Users\\INFORMATICA\\Documents\\Desarrollos Web\\Vibraciones\\Vibraciones\\src\\RespuestasVibraciones.html"
         }
     ]
 }

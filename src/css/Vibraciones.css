@@ -7,7 +7,7 @@ body {
     margin: 10px;
 }
 
-.Content-form, .Content-inf {
+.Content-form, .Content-header {
     padding: 3%;
     margin: 10px;
     inset: 0 -3em 3em rgba(0,0,0,0.1),
@@ -24,7 +24,7 @@ body {
     width: 1000px;
 } 
 
-.Content-router {
+.Content-vibrations {
     display: flex;
 }
 
@@ -38,7 +38,7 @@ body {
     padding-left: 0%;
 }
 
-.Table-router {
+.Table-vibrations {
     padding: 3%;
     padding-left: 5.5%;
     width: 100%;
@@ -60,10 +60,10 @@ body {
 .search {
     background-color: #2A265F;
     margin-left: 15%;
+    width: 100%;
 }
 
 input[type="text"] {
-    width: 100%;
     height: 40px;
     color: aliceblue;
 }
@@ -94,6 +94,10 @@ input[name="name"]:hover {
     justify-content: center;
 }
 
+.Table-form {
+    width: 200px;
+}
+
 .lupa {
     background-color: transparent;
     border: none;
@@ -111,15 +115,15 @@ input[name="name"]:hover {
     -webkit-transform:scale(-0.75);transform:scale(-0.75);
 }
 
-td:hover {
+.Answers-vibrations td:hover {
     background-color: rgb(158, 158, 197); 
 }
 
-th:hover {
+.Answers-vibrations th:hover {
     background-color: #110f30;
 }
 
-th { 
+.Answers-vibrations th { 
     background-color: #2A265F;
     color: rgb(222, 222, 236); 
     border-radius: 10px;
@@ -127,7 +131,7 @@ th {
     font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
-td { 
+.Answers-vibrations td { 
     background-color: rgb(217, 217, 240); 
     padding: 2%;
     margin: none;
@@ -135,53 +139,100 @@ td {
     width: 200px;
 }
 
-.content-buttons-pagination {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+.td-TableForm {
+    background-color: rgb(35, 83, 122);
+    color: aliceblue;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 200;
 }
 
-.buttons-pagination {
+.td-TableForm td{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.th-TableForm {
+    background-color: #222225;
+    color: aliceblue;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-TableForm {
+    background-color: rgba(35, 83, 122, 0.486);
+    border: none;
+    width: 60px;
+    color: #000000;
+}
+
+.inf-NameMachine {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-TableForm[name="cv"] {
+    background-color: rgba(35, 122, 64, 0.486);
+}
+
+.input-TableForm[name="ch"] {
+    background-color: rgba(122, 113, 35, 0.486);
+}
+
+.input-TableForm[name="ca"] {
+    background-color: rgba(122, 35, 35, 0.486);
+}
+
+.input-TableForm:hover {
+    left: 0%;
+}
+
+.input-TableForm input {
+    width: auto;
+}
+
+.content-buttons-excel {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-excel {
     margin: 10px;
     height: 50px;
-    width: 15%;
-    background-color: rgb(47, 48, 79);
-    color: rgb(195, 196, 230);
+    width: 160px;
+    background-color: rgb(52, 79, 47);
+    color: rgb(195, 230, 195);
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     border-radius: 5px;
     font-weight: bold;
     border: 0px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.buttons-pagination:hover {
-    background-color: rgb(195, 197, 230);
-    color: rgb(47, 48, 79);
+.buttons-excel:hover {
+    background-color: rgb(199, 230, 195);
+    color: rgb(50, 79, 47);
     cursor: pointer;
-}
-
-.buttons-pagination:hover[name='previous']{
     transition: 0.4s ease-in-out all;
-    position: relative;
-    right: 10px;
-}
-
-.buttons-pagination:hover[name='next']{
-    transition: 0.4s ease-in-out all;
-    position: relative;
-    left: 10px;
 }
 
 input, textarea {
-    width: 80%;
-    height: 5%;
+    width: 20%;
+    height: 50px;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
     color: rgb(77, 75, 75);
     border-radius: 5px;
-    min-width: 100px;
     display: flex;
     justify-content: center;
 }
@@ -199,7 +250,7 @@ input:hover, textarea:hover {
 
 input[type="button"] {
     height: 50px;
-    width: 30%;
+    width: 150px;
     background-color: rgb(35, 83, 122);
     color: aliceblue;
     font-family: 'Ubuntu', sans-serif;
@@ -219,13 +270,15 @@ input[type="button"]:hover {
     transition: 0.4s ease-in-out all;
 }
 
-h1, h2, h4, h3{
+h1, h2, h4, h3, h5{
     font-family: system-ui;
     font-weight: 200;
 }
 
-h4, h3{
-    font-weight: 200;
+h5 {
+    font-size: medium;
+    color:  rgb(10, 44, 71);
+    font-weight: 500;
 }
 
 h1, h2, h3 {
@@ -271,26 +324,39 @@ hr {
     width: 20px
 }
 
+.content-register-vibrations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-vibrations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Select names*/
 
-.Content-select-names select{
+.Content-select select{
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+    margin-left: 20px;
 }
 
-.Content-select-names select::-ms-expand {
+.Content-select select::-ms-expand {
     display: none;
 }
 
-.Content-select-names{
+.Content-select{
 	max-width: 250px;
 	position: relative;
 }
  
-.Content-select-names select{
+.Content-select select{
 	display: inline-block;
 	width: 100%;
+    right: 21px;
 	cursor: pointer;
   	padding: 7px 10px;
   	height: 42px;
@@ -309,13 +375,12 @@ hr {
     transition: all 0.25s ease;
 }
  
-.Content-select-names select:hover{
+.Content-select select:hover{
 	background: #232425;
 }
 
-.Content-select-names i{
+.Content-select i{
 	position: absolute;
-	right: 20px;
 	top: calc(50% - 13px);
 	width: 16px;
 	height: 16px;
@@ -326,8 +391,52 @@ hr {
 	transition: all 0.25s ease;
 }
  
-.Content-select-names:hover i{
+.Content-select:hover i{
 	margin-top: 3px;
+}
+
+.Answers-Inputs {
+    background-color: #467dc42f;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: large;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.Answers-Inputs:hover {
+    background-color: #1b5aac6e;
+}
+
+.Answers-table {
+    background-color: #2a265f21;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Raleway',"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: large;
+}
+
+.separation {
+    margin: inherit;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+canvas {
+    width: 600px;
+}
+
+.content-inf {
+    padding: 20px;
+    padding-right: 100px;
+}
+
+.graphic {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
 }
 
 /*Fecha*/
@@ -343,54 +452,80 @@ input[type="date"] {
     margin-right: 40px;
 }
 
+.margin-left {
+    margin-left: 50px;
+}
+
+.Label-good, .Label-alert, .Label-emergency {
+    display: flex;
+    align-items: center;
+    border: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.Label-alert {
+    background-color: antiquewhite;
+}
+
+.Label-good {
+    background-color: rgb(215, 250, 228);
+}
+
+.Label-emergency {
+    background-color: rgb(250, 215, 215);
+}
+
+.Labels-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 /*Responsive*/
 
-@media screen and (max-width: 603px) {
+@media screen and (max-width: 1000px) {
     input{
-        width: 200px;
+        width: 30%;
     }
-}
-
-@media screen and (max-width: 460px) {
-    .Content-router{
+    .register-vibrations {
+        flex-direction: row;
+    }
+    .inf-NameMachine {
+        display: flex;
+        align-items: center;
         flex-wrap: wrap;
     }
+
+    .margin-left {
+        margin-left: 55px;
+    }
+
+    .Content-vibrations{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     hr {
-
         height: 1px;
-        width: 420px;
+        width: 1020px;
         background-color: black;
+        margin: -40px;
     }
 }
 
-/*Botones ←  →*/
+@media screen and (max-width: 700px) {
+    .inf-NameMachine {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media screen and (max-width: 720px) {
-    .buttons-pagination[name='previous'] {
-        justify-content: flex-start;
-        margin-left: -70px;
-    }
-    .buttons-pagination {
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .buttons-pagination[name='previous'] {
-        justify-content: flex-start;
-        margin-left: 30px;
-    }
-    .buttons-pagination {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .buttons-pagination[name='previous'] {
-        justify-content: flex-start;
-        margin-left: 35px;
-    }
-    .buttons-pagination {
-        width: 130px;
+    .margin-left {
+        margin-left: 0px;
     }
 }
